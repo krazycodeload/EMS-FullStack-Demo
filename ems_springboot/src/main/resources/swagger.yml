@@ -1,0 +1,10 @@
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+  info:
+    title: "My EMS API"
+    description: "API for Employee Management System"
+    version: "1.0"
