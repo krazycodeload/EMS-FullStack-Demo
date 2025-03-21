@@ -7,6 +7,8 @@ import EmployeeComponent from './components/EmployeeComponent'
 import HeaderComponent from './components/HeaderComponent'
 import FooterComponent from './components/FooterComponent'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import DepartmentListComponent from './components/DepartmentListComponent'
+import DepartmentComponent from './components/DepartmentComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +22,9 @@ function App() {
        <Route path='/employees' element = { <EmployeeListComponent/> }/>
        <Route path='/add-employee' element = { <EmployeeComponent />}/>
        <Route path='/edit-employee/:id' element = { <EmployeeComponent /> }/>
+       <Route path='/departments' element = { <DepartmentListComponent/>}></Route>
+       <Route path='/add-department' element = { <DepartmentComponent/> }/>
+       <Route path='/edit-department/:id' element = { <DepartmentComponent />}/>
     </Routes>
      <FooterComponent/>
     </BrowserRouter>
